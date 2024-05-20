@@ -1,4 +1,5 @@
 import React from 'react'
+import TaskForm from './forms/TaskForm';
 
 export const Main = () => {
     return (
@@ -13,6 +14,7 @@ export const Main = () => {
                   Welcome back learning react js as front end in laravel.
                 </div>
               </div>
+              <TaskForm />
             </div>
             <div className="w-6/12">
             </div>
