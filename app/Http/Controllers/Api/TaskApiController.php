@@ -35,4 +35,9 @@ class TaskApiController extends Controller
             'message' => 'Task Added'
         ], 200);
     }
+
+    public function getAllTask()
+    {
+        return response()->json(['data' => $this->todoModel->getTaskList()], 200);
+    }
 }

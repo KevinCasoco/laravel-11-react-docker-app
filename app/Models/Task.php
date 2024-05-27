@@ -16,4 +16,9 @@ class Task extends Model
     public function createTask($task){
         return $this->create($task);
     }
+
+    public function getTaskList()
+    {
+        return $this->where('completed', false)->orderBy('created_at', 'desc')->get();
+    }
 }
